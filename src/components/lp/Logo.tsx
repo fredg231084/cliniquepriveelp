@@ -1,0 +1,19 @@
+import Image from 'next/image';
+
+interface LogoProps {
+  variant?: 'light' | 'dark';
+  className?: string;
+}
+
+export function Logo({ className = '' }: LogoProps) {
+  return (
+    <Image
+      src="/logos/cliniqueprivee-logo.png"
+      alt="Clinique Privée"
+      width={180}
+      height={48}
+      className={`h-10 w-auto ${className}`}
+      priority
+    />
+  );
+}
