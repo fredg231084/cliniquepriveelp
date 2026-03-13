@@ -28,7 +28,7 @@
     @apply w-full rounded-xl border border-cream-300 bg-white px-4 py-3.5
            text-[15px] text-navy-800 placeholder:text-navy-400/50
            transition-all duration-200 ease-out
-           focus:border-navy-800/30 focus:outline-none focus:ring-2 focus:ring-navy-800/8;
+           focus:border-navy-800/30 focus:outline-none focus:ring-2 focus:ring-navy-100;
   }
 
   .lp-input:hover:not(:focus) {
