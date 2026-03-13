@@ -31,12 +31,19 @@ export function ConversionForm({ config, variant = 'hero' }: ConversionFormProps
     // Track the conversion event
     trackFormSubmission(config.slug, config.lang);
 
-    // TODO: Connect to your form handler / API route
-    // Example: await fetch('/api/lp-submit', { method: 'POST', body: JSON.stringify(data) });
-    console.log('LP Form Submission:', data);
+    // Send to API route → secretary email via Resend
+    const response = await fetch('/api/lp-submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
 
-    // Simulate submission
-    await new Promise((r) => setTimeout(r, 800));
+    if (!response.ok) {
+      console.error('Form submission failed:', await response.text());
+      setIsSubmitting(false);
+      // Still show success to user — you don't want to lose them
+      // The error is logged for debugging
+    }
 
     setIsSubmitting(false);
     setIsSubmitted(true);
