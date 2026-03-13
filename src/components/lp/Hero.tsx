@@ -20,7 +20,7 @@ export function Hero({ config }: HeroProps) {
       <div className="relative">
         {/* Top bar — logo + language switcher */}
         <div className="flex items-center justify-between px-5 pb-4 pt-5 md:px-8 md:pb-0 md:pt-6 lg:px-12">
-          <Logo className="brightness-0 invert" />
+          <Logo />
 
           {/* Language switcher — discreet */}
           {config.alternateSlug && (
