@@ -8,7 +8,7 @@ interface LogoProps {
 export function Logo({ className = '' }: LogoProps) {
   return (
     <Image
-      src="/logos/cliniqueprivee-logo.png"
+      src="/logos/clinique-privee-logo-white.png"
       alt="Clinique Privée"
       width={180}
       height={48}
