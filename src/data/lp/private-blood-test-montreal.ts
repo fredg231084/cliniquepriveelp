@@ -4,29 +4,29 @@ export const privateBloodTestMontreal: LPConfig = {
   slug: 'private-blood-test-montreal',
   lang: 'en',
   alternateSlug: 'prise-de-sang-privee-montreal',
-  title: 'Private Blood Test in Montreal — No Wait | Clinique Privée',
+  title: 'Private Blood Test in Montreal — Fast Results | Clinique Privée',
   description:
-    'Private blood tests in Montreal. Fast appointment, reliable results. Modern clinic, transparent pricing.',
+    'Private blood tests in Montreal within 48h. No long wait. Certified labs, transparent pricing, insurance receipts.',
   phone: '+15149001234',
   phoneDisplay: '(514) 900-1234',
 
   hero: {
     overline: 'Clinique Privée Montréal',
-    h1: 'Private Blood Tests\nin Montreal — No Wait',
+    h1: 'Private Blood Tests\nin Montreal — Fast Results',
     subtitle:
-      'Fast appointment in a professional, comfortable setting. Reliable results, often within 48 hours.',
+      'Appointment within 48 hours in a professional setting. Reliable results, delivered securely.',
     trustBullets: [
-      'Appointments often available within 48 hours',
-      'Professional blood draw in a private setting',
+      'Appointment often available within 48 hours',
+      'Blood draw by qualified professionals',
       'Wide range of tests available',
-      'Fast and confidential results',
+      'Fast, confidential results',
     ],
-    pricingCue: 'Pricing varies by tests requested',
+    pricingCue: 'Clear pricing by test — Quote before your appointment',
   },
 
   form: {
     heading: 'Book your blood test',
-    subheading: 'Our team will contact you quickly',
+    subheading: 'Our team contacts you today',
     namePlaceholder: 'Full name',
     phonePlaceholder: 'Phone number',
     emailPlaceholder: 'Email address',
@@ -37,56 +37,56 @@ export const privateBloodTestMontreal: LPConfig = {
       'STI screening',
       'Medical follow-up / other',
     ],
-    ctaText: 'Submit my request',
+    ctaText: 'Request my appointment',
     privacyNote: 'Your information is confidential and protected.',
   },
 
   whyChooseUs: {
     overline: 'Why choose us',
-    heading: 'Simple, professional private blood testing',
+    heading: 'Private blood testing, without the hassle.',
     cards: [
       {
         icon: 'clock',
-        title: 'No wait list',
+        title: 'Within 48 hours',
         description:
-          'Get a slot within days. No endless queues or months-long delays.',
+          'No public lab queue. Your slot is confirmed quickly — often the next day.',
       },
       {
         icon: 'shield',
-        title: 'Transparent pricing',
+        title: 'Clear quote, zero surprises',
         description:
-          'Clear quote before your appointment. Insurance receipts provided, no surprises.',
+          'Pricing communicated before your appointment. Insurance receipts provided.',
       },
       {
         icon: 'check',
-        title: 'Fast, reliable results',
+        title: 'Certified, fast results',
         description:
-          'Tests processed by certified labs. Results delivered securely and promptly.',
+          'Tests processed by accredited labs. Results delivered securely, typically within a few days.',
       },
     ],
   },
 
   howItWorks: {
     overline: 'How it works',
-    heading: 'Your blood test in three steps',
+    heading: 'Simple. Fast. No hassle.',
     steps: [
       {
         number: 1,
         title: 'Submit your request',
         description:
-          'Fill in the form in 30 seconds. No commitment.',
+          '30 seconds. Name, phone, email. That\'s it.',
       },
       {
         number: 2,
-        title: 'Appointment confirmation',
+        title: 'We confirm your appointment',
         description:
-          'Our team contacts you to confirm date, time, and any prep needed.',
+          'Our team contacts you and lets you know what prep is needed.',
       },
       {
         number: 3,
         title: 'Blood draw at the clinic',
         description:
-          'Come in for a quick, professional blood draw.',
+          'Quick, professional, in a private and comfortable setting.',
       },
     ],
   },
@@ -95,63 +95,63 @@ export const privateBloodTestMontreal: LPConfig = {
     overline: 'What\'s included',
     heading: 'Your appointment includes',
     items: [
-      'Professional blood draw',
-      'Fast and simple appointment process',
-      'Secure delivery of results',
-      'Private and comfortable setting',
-      'Follow-up with a doctor if needed',
+      'Blood draw by qualified professionals',
+      'Processing at an accredited laboratory',
+      'Secure delivery of your results',
+      'Private, clean, and comfortable setting',
+      'Doctor follow-up available if needed',
     ],
   },
 
   pricingCta: {
     overline: 'Pricing',
-    heading: 'Transparent blood test pricing',
+    heading: 'Clear pricing. Zero surprises.',
     description:
-      'Cost depends on the tests requested. Clear quote provided before your appointment. No surprises.',
-    ctaText: 'Request an appointment',
+      'Cost varies by tests requested. Quote provided before your appointment. Insurance receipt included. No hidden fees.',
+    ctaText: 'Book now',
     features: [
       'Quote before appointment',
-      'Insurance receipts provided',
+      'Insurance receipts',
       'Fast results',
     ],
   },
 
   faq: {
     overline: 'Frequently asked questions',
-    heading: 'Your questions, answered',
+    heading: 'Everything you need to know',
     items: [
       {
         question: 'When can I get an appointment?',
         answer:
-          'Most blood test appointments are available within 48 business hours.',
+          'Within 48 business hours in most cases. Contact us for urgent requests.',
       },
       {
         question: 'Do I need a prescription?',
         answer:
-          'Some tests require a prescription. If you don\'t have one, our doctor can provide one during a consultation.',
+          'Some tests require one. If you don\'t have a prescription, our doctor can provide one during a short consultation.',
       },
       {
         question: 'Do I need to fast?',
         answer:
-          'It depends on the tests. Our team will let you know what prep is needed when confirming your appointment.',
+          'It depends on the tests. Our team will let you know what preparation is needed when confirming your appointment.',
       },
       {
         question: 'How will I receive my results?',
         answer:
-          'Results are delivered securely, most available within a few days.',
+          'Securely and confidentially. Most results are available within a few days.',
       },
       {
         question: 'Where are you located?',
         answer:
-          '1100 Beaumont Ave, Suite 302, Mont-Royal. On-site parking available.',
+          '1100 Beaumont Ave, Suite 302, Mont-Royal. Free on-site parking.',
       },
     ],
   },
 
   finalCta: {
-    heading: 'Book now — limited availability',
+    heading: 'Your results are 48 hours away.',
     subtitle:
-      'Don\'t put your health on hold. Submit your request or call us directly.',
+      'Limited spots this week. Submit your request now and our team will contact you today.',
     ctaText: 'Book my blood test',
     phoneCtaText: '(514) 900-1234',
   },

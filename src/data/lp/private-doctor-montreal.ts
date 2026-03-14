@@ -4,29 +4,29 @@ export const privateDoctorMontreal: LPConfig = {
   slug: 'private-doctor-montreal',
   lang: 'en',
   alternateSlug: 'medecin-prive-montreal',
-  title: 'Private Doctor in Montreal — No Wait | Clinique Privée',
+  title: 'Private Doctor in Montreal — Appointment in 24–48h | Clinique Privée',
   description:
-    'Private doctor in Montreal. Appointments within days, no wait list. Modern clinic, transparent pricing.',
+    'See a private doctor in Montreal this week. No wait list, no referral needed. Modern clinic, transparent pricing.',
   phone: '+15149001234',
   phoneDisplay: '(514) 900-1234',
 
   hero: {
     overline: 'Clinique Privée Montréal',
-    h1: 'Private Doctor in Montreal\n— No Wait',
+    h1: 'Private Doctor in Montreal\n— Appointment in 24–48h',
     subtitle:
-      'Fast appointment with an experienced physician. Book in minutes.',
+      'See an experienced physician this week. No wait list, no referral required.',
     trustBullets: [
-      'Appointments available this week',
+      'Appointment confirmed within 24–48 hours',
       'Full 30-minute consultation',
-      'Direct access to on-site ENT specialists',
-      'Fast results and follow-ups',
+      'ENT specialists available on-site',
+      'Prescription and follow-up same day',
     ],
-    pricingCue: 'Consultations starting at $200',
+    pricingCue: 'Consultations from $200 — Insurance receipts provided',
   },
 
   form: {
-    heading: 'Request an appointment',
-    subheading: 'Quick response from our team',
+    heading: 'Book your consultation',
+    subheading: 'Our team calls you back today',
     namePlaceholder: 'Full name',
     phonePlaceholder: 'Phone number',
     emailPlaceholder: 'Email address',
@@ -37,56 +37,56 @@ export const privateDoctorMontreal: LPConfig = {
       'Medical follow-up',
       'Urgent concern',
     ],
-    ctaText: 'Submit my request',
+    ctaText: 'Request my appointment',
     privacyNote: 'Your information is confidential and protected.',
   },
 
   whyChooseUs: {
     overline: 'Why choose us',
-    heading: 'Private medical care designed around you',
+    heading: 'Private medicine, done right.',
     cards: [
       {
         icon: 'clock',
-        title: 'No wait list',
+        title: '24–48h, not 6 months',
         description:
-          'Appointments within days, not months. Skip the endless public system queues.',
+          'While the public system makes you wait, we see you this week. Often within 48 hours.',
       },
       {
         icon: 'shield',
-        title: 'Transparent pricing',
+        title: '$200, all-inclusive',
         description:
-          'No surprises. Clear fees before your visit, receipts for private insurance.',
+          'Full consultation, prescription if needed, insurance receipt. No hidden fees.',
       },
       {
         icon: 'building',
-        title: 'Fast specialist access',
+        title: 'ENT specialists on-site',
         description:
-          'On-site ENT specialists, modern clinic in Montreal. Everything under one roof.',
+          'Direct access to our ENT specialists with no extra wait. Everything handled in one visit.',
       },
     ],
   },
 
   howItWorks: {
     overline: 'How it works',
-    heading: 'Three simple steps',
+    heading: 'Simple. Fast. No hassle.',
     steps: [
       {
         number: 1,
         title: 'Submit your request',
         description:
-          'Fill out the form in 30 seconds. No commitment.',
+          '30 seconds. Name, phone, email. That\'s it.',
       },
       {
         number: 2,
-        title: 'Our team contacts you',
+        title: 'We call you back',
         description:
-          'A team member calls you back quickly to confirm the details.',
+          'Our team confirms your appointment the same day.',
       },
       {
         number: 3,
         title: 'See your doctor',
         description:
-          'Attend your appointment. Attentive and thorough consultation.',
+          '30 minutes. An attentive physician, a real consultation.',
       },
     ],
   },
@@ -95,71 +95,71 @@ export const privateDoctorMontreal: LPConfig = {
     overline: 'What\'s included',
     heading: 'Your private consultation includes',
     items: [
-      'Full medical consultation with a doctor',
-      'Thorough assessment of your health',
-      'Prescription if needed',
-      'Specialist referral if necessary',
-      'Direct access to on-site ENT specialists',
+      'Full 30-minute medical consultation',
+      'Health assessment and symptom evaluation',
+      'Medical prescription if needed',
+      'Direct specialist referral if required',
+      'Access to ENT specialists on-site',
     ],
   },
 
   pricingCta: {
     overline: 'Pricing',
-    heading: 'Accessible and transparent medical care',
+    heading: 'One flat fee. Zero surprises.',
     price: '$200',
     priceLabel: 'per consultation',
     description:
-      'Complete medical consultation with a family physician. Annual family plan also available.',
-    ctaText: 'Book an appointment',
+      '30-minute consultation with a family physician. Fixed price, no surprises. Insurance receipt provided. Annual family plan available.',
+    ctaText: 'Book now',
     features: [
       '30-min consultation',
       'No wait list',
-      'Fast follow-up',
+      'Insurance receipts',
     ],
   },
 
   faq: {
     overline: 'Frequently asked questions',
-    heading: 'Your questions, answered',
+    heading: 'Everything you need to know',
     items: [
       {
         question: 'How quickly can I get an appointment?',
         answer:
-          'Most patients get an appointment within a few business days. Walk-in availability also offered for urgent cases.',
+          'Within 24 to 48 hours in most cases. For urgent needs, same-day availability is often possible.',
       },
       {
         question: 'Do I need a referral?',
         answer:
-          'No. You can book directly with our clinic, no referral needed.',
+          'No. No referral needed. You book directly with our clinic.',
       },
       {
         question: 'How does payment work?',
         answer:
-          'Payment on-site by credit or debit card. Insurance receipts provided.',
+          'On-site, by credit or debit card. Insurance receipt provided.',
       },
       {
         question: 'What\'s included in the consultation?',
         answer:
-          'Full medical assessment, prescriptions if needed, specialist referrals when appropriate.',
+          'Full assessment, prescription if needed, specialist referral if required. 30 minutes entirely focused on you.',
       },
       {
         question: 'Where are you located?',
         answer:
-          '1100 Beaumont Ave, Suite 302, Mont-Royal. On-site parking, wheelchair accessible.',
+          '1100 Beaumont Ave, Suite 302, Mont-Royal. Free on-site parking. Wheelchair accessible.',
       },
     ],
   },
 
   finalCta: {
-    heading: 'Book now — limited availability',
+    heading: 'Your appointment is 48 hours away.',
     subtitle:
-      'Don\'t put your health on hold. Submit your request or call us directly.',
-    ctaText: 'Request an appointment',
+      'Physicians available this week. Submit your request now — spots are limited.',
+    ctaText: 'Request my appointment',
     phoneCtaText: '(514) 900-1234',
   },
 
   stickyCta: {
-    text: 'Book appointment',
+    text: 'Book now',
     phoneText: 'Call',
   },
 

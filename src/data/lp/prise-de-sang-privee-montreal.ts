@@ -4,29 +4,29 @@ export const priseDeSangPriveeMontreal: LPConfig = {
   slug: 'prise-de-sang-privee-montreal',
   lang: 'fr',
   alternateSlug: 'private-blood-test-montreal',
-  title: 'Prise de sang privée à Montréal — Sans attente | Clinique Privée',
+  title: 'Prise de sang privée à Montréal — Résultats rapides | Clinique Privée',
   description:
-    'Prise de sang privée à Montréal. Rendez-vous rapide, résultats fiables. Clinique moderne, tarifs transparents.',
+    'Prise de sang privée à Montréal sous 48h. Sans ordonnance pour la plupart des analyses. Résultats fiables, tarifs clairs.',
   phone: '+15149001234',
   phoneDisplay: '(514) 900-1234',
 
   hero: {
     overline: 'Clinique Privée Montréal',
-    h1: 'Prise de Sang Privée\nà Montréal — Sans Attente',
+    h1: 'Prise de sang privée\nà Montréal — Résultats rapides',
     subtitle:
-      'Rendez-vous rapide dans un cadre professionnel. Résultats fiables, souvent sous 48 heures.',
+      'Rendez-vous sous 48 heures dans un cadre professionnel. Résultats fiables, transmis de façon sécurisée.',
     trustBullets: [
-      'Rendez-vous souvent disponibles dans les 48 heures',
-      'Prélèvement professionnel dans un cadre privé',
+      'Rendez-vous souvent disponible sous 48 heures',
+      'Prélèvement par du personnel qualifié',
       'Large gamme d\'analyses disponibles',
       'Résultats rapides et confidentiels',
     ],
-    pricingCue: 'Tarifs selon les analyses demandées',
+    pricingCue: 'Tarifs clairs selon les analyses — Devis avant rendez-vous',
   },
 
   form: {
     heading: 'Réserver votre prise de sang',
-    subheading: 'Notre équipe vous contacte rapidement',
+    subheading: 'Notre équipe vous contacte aujourd\'hui',
     namePlaceholder: 'Nom complet',
     phonePlaceholder: 'Numéro de téléphone',
     emailPlaceholder: 'Adresse courriel',
@@ -37,56 +37,56 @@ export const priseDeSangPriveeMontreal: LPConfig = {
       'Dépistage ITSS',
       'Suivi médical / autre',
     ],
-    ctaText: 'Envoyer ma demande',
+    ctaText: 'Demander mon rendez-vous',
     privacyNote: 'Vos informations sont confidentielles et protégées.',
   },
 
   whyChooseUs: {
     overline: 'Pourquoi nous choisir',
-    heading: 'Prises de sang privées simples et professionnelles',
+    heading: 'La prise de sang privée, sans complication',
     cards: [
       {
         icon: 'clock',
-        title: 'Sans attente',
+        title: 'Sous 48 heures',
         description:
-          'Créneau disponible en quelques jours. Pas de file d\'attente, pas de délais inutiles.',
+          'Pas de file d\'attente au laboratoire public. Votre créneau est confirmé rapidement, souvent le lendemain.',
       },
       {
         icon: 'shield',
-        title: 'Prix transparents',
+        title: 'Devis clair, zéro surprise',
         description:
-          'Devis clair avant votre rendez-vous. Reçus pour assurances privées, aucune surprise.',
+          'Tarif communiqué avant votre rendez-vous. Reçu fourni pour vos assurances privées.',
       },
       {
         icon: 'check',
-        title: 'Résultats fiables et rapides',
+        title: 'Résultats certifiés et rapides',
         description:
-          'Analyses en laboratoires certifiés. Résultats transmis de façon sécurisée.',
+          'Analyses en laboratoires accrédités. Résultats transmis de façon sécurisée, généralement en quelques jours.',
       },
     ],
   },
 
   howItWorks: {
     overline: 'Comment ça fonctionne',
-    heading: 'Votre prise de sang en trois étapes',
+    heading: 'Simple. Rapide. Sans tracas.',
     steps: [
       {
         number: 1,
-        title: 'Envoyez votre demande',
+        title: 'Soumettez votre demande',
         description:
-          'Remplissez le formulaire en 30 secondes. Sans engagement.',
+          '30 secondes. Nom, téléphone, courriel. C\'est tout.',
       },
       {
         number: 2,
-        title: 'Confirmation du rendez-vous',
+        title: 'On confirme votre rendez-vous',
         description:
-          'Notre équipe vous contacte pour confirmer la date et les préparations nécessaires.',
+          'Notre équipe vous contacte et vous informe des préparations nécessaires.',
       },
       {
         number: 3,
         title: 'Prélèvement à la clinique',
         description:
-          'Présentez-vous pour un prélèvement rapide et professionnel.',
+          'Rapide, professionnel, dans un cadre privé et confortable.',
       },
     ],
   },
@@ -95,20 +95,20 @@ export const priseDeSangPriveeMontreal: LPConfig = {
     overline: 'Ce qui est inclus',
     heading: 'Votre rendez-vous comprend',
     items: [
-      'Prélèvement sanguin professionnel',
-      'Processus de rendez-vous rapide et simple',
-      'Transmission sécurisée des résultats',
-      'Cadre privé et confortable',
-      'Suivi avec un médecin si nécessaire',
+      'Prélèvement sanguin par du personnel qualifié',
+      'Acheminement vers un laboratoire accrédité',
+      'Transmission sécurisée de vos résultats',
+      'Cadre privé, propre et confortable',
+      'Suivi avec un médecin disponible si nécessaire',
     ],
   },
 
   pricingCta: {
     overline: 'Tarification',
-    heading: 'Prises de sang à tarification transparente',
+    heading: 'Tarifs clairs. Zéro surprise.',
     description:
-      'Le coût varie selon les analyses demandées. Devis clair fourni avant votre rendez-vous. Aucune surprise.',
-    ctaText: 'Demander un rendez-vous',
+      'Le coût varie selon les analyses demandées. Devis communiqué avant votre rendez-vous. Reçu fourni pour vos assurances privées. Aucun frais caché.',
+    ctaText: 'Réserver maintenant',
     features: [
       'Devis avant rendez-vous',
       'Reçu pour assurances',
@@ -118,40 +118,40 @@ export const priseDeSangPriveeMontreal: LPConfig = {
 
   faq: {
     overline: 'Questions fréquentes',
-    heading: 'Vos questions, nos réponses',
+    heading: 'Tout ce que vous voulez savoir',
     items: [
       {
         question: 'Quand puis-je avoir mon rendez-vous?',
         answer:
-          'La plupart des rendez-vous sont disponibles dans les 48 heures ouvrables.',
+          'Sous 48 heures ouvrables dans la plupart des cas. Contactez-nous pour les demandes urgentes.',
       },
       {
         question: 'Ai-je besoin d\'une ordonnance?',
         answer:
-          'Certaines analyses requièrent une ordonnance. Si vous n\'en avez pas, notre médecin peut vous en fournir une.',
+          'Certaines analyses l\'exigent. Si vous n\'en avez pas, notre médecin peut vous en fournir une lors d\'une courte consultation.',
       },
       {
         question: 'Dois-je être à jeun?',
         answer:
-          'Cela dépend des analyses. Notre équipe vous informera lors de la confirmation de votre rendez-vous.',
+          'Cela dépend des analyses. Notre équipe vous indique les préparations nécessaires lors de la confirmation.',
       },
       {
         question: 'Comment recevrai-je mes résultats?',
         answer:
-          'Résultats transmis de façon sécurisée, généralement disponibles en quelques jours.',
+          'De façon sécurisée et confidentielle. La plupart des résultats sont disponibles en quelques jours.',
       },
       {
         question: 'Où êtes-vous situés?',
         answer:
-          '1100 avenue Beaumont, bureau 302, Mont-Royal. Stationnement sur place.',
+          '1100 avenue Beaumont, bureau 302, Mont-Royal. Stationnement gratuit sur place.',
       },
     ],
   },
 
   finalCta: {
-    heading: 'Réservez maintenant — disponibilités limitées',
+    heading: 'Vos résultats sont à 48 heures.',
     subtitle:
-      'Ne reportez pas votre santé. Soumettez votre demande ou appelez-nous directement.',
+      'Places limitées cette semaine. Soumettez votre demande maintenant et notre équipe vous contacte aujourd\'hui.',
     ctaText: 'Réserver ma prise de sang',
     phoneCtaText: '(514) 900-1234',
   },

@@ -4,29 +4,29 @@ export const medecinPriveMontreal: LPConfig = {
   slug: 'medecin-prive-montreal',
   lang: 'fr',
   alternateSlug: 'private-doctor-montreal',
-  title: 'Médecin privé à Montréal — Sans attente | Clinique Privée',
+  title: 'Médecin privé à Montréal — Rendez-vous en 24–48h | Clinique Privée',
   description:
-    'Médecin privé à Montréal. Rendez-vous en quelques jours, sans liste d\'attente. Clinique moderne, tarifs transparents.',
+    'Consultez un médecin privé à Montréal dès cette semaine. Sans liste d\'attente, sans référence. Clinique moderne, tarifs clairs.',
   phone: '+15149001234',
   phoneDisplay: '(514) 900-1234',
 
   hero: {
     overline: 'Clinique Privée Montréal',
-    h1: 'Médecin Privé à Montréal\n— Sans Attente',
+    h1: 'Médecin privé à Montréal\n— Rendez-vous en 24–48h',
     subtitle:
-      'Rendez-vous rapide avec un médecin expérimenté. Réservez en quelques minutes.',
+      'Consultez un médecin expérimenté dès cette semaine. Sans liste d\'attente, sans référence.',
     trustBullets: [
-      'Rendez-vous disponibles cette semaine',
+      'Rendez-vous confirmé sous 24–48h',
       'Consultation complète de 30 minutes',
-      'Accès direct aux spécialistes ORL sur place',
-      'Résultats et suivis rapides',
+      'Spécialistes ORL disponibles sur place',
+      'Prescription et suivi le jour même',
     ],
-    pricingCue: 'Consultation à partir de 200 $',
+    pricingCue: 'Consultation à partir de 200 $ — Reçu pour assurances',
   },
 
   form: {
-    heading: 'Demander un rendez-vous',
-    subheading: 'Réponse rapide de notre équipe',
+    heading: 'Réserver votre consultation',
+    subheading: 'Notre équipe vous rappelle aujourd\'hui',
     namePlaceholder: 'Nom complet',
     phonePlaceholder: 'Numéro de téléphone',
     emailPlaceholder: 'Adresse courriel',
@@ -37,56 +37,56 @@ export const medecinPriveMontreal: LPConfig = {
       'Suivi médical',
       'Problème urgent',
     ],
-    ctaText: 'Envoyer ma demande',
+    ctaText: 'Demander mon rendez-vous',
     privacyNote: 'Vos informations sont confidentielles et protégées.',
   },
 
   whyChooseUs: {
     overline: 'Pourquoi nous choisir',
-    heading: 'Des soins médicaux privés pensés pour vous',
+    heading: 'La médecine privée, comme elle devrait être',
     cards: [
       {
         icon: 'clock',
-        title: 'Sans attente',
+        title: '24–48h, pas 6 mois',
         description:
-          'Rendez-vous en quelques jours, pas en quelques mois. Fini les listes d\'attente interminables.',
+          'Pendant que le système public vous fait attendre, nous vous recevons cette semaine. Souvent sous 48 heures.',
       },
       {
         icon: 'shield',
-        title: 'Prix transparents',
+        title: '200 $, tout inclus',
         description:
-          'Aucune surprise. Tarifs clairs avant votre visite, reçus pour vos assurances privées.',
+          'Consultation complète, prescription si nécessaire, reçu pour vos assurances. Aucun frais caché.',
       },
       {
         icon: 'building',
-        title: 'Accès rapide aux spécialistes',
+        title: 'ORL sur place',
         description:
-          'Spécialistes ORL sur place, clinique moderne à Montréal. Tout sous un même toit.',
+          'Accès direct à nos spécialistes ORL sans attente supplémentaire. Tout se règle en une seule visite.',
       },
     ],
   },
 
   howItWorks: {
     overline: 'Comment ça fonctionne',
-    heading: 'Trois étapes simples',
+    heading: 'Simple. Rapide. Sans tracas.',
     steps: [
       {
         number: 1,
-        title: 'Envoyez votre demande',
+        title: 'Soumettez votre demande',
         description:
-          'Remplissez le formulaire en 30 secondes. Sans engagement.',
+          '30 secondes. Nom, téléphone, courriel. C\'est tout.',
       },
       {
         number: 2,
-        title: 'Notre équipe vous contacte',
+        title: 'On vous rappelle rapidement',
         description:
-          'Un membre de notre équipe vous rappelle rapidement pour confirmer.',
+          'Notre équipe confirme votre rendez-vous le jour même.',
       },
       {
         number: 3,
         title: 'Consultez votre médecin',
         description:
-          'Présentez-vous à votre rendez-vous. Consultation attentive et complète.',
+          '30 minutes. Un médecin attentif, une vraie consultation.',
       },
     ],
   },
@@ -95,71 +95,71 @@ export const medecinPriveMontreal: LPConfig = {
     overline: 'Ce qui est inclus',
     heading: 'Votre consultation privée comprend',
     items: [
-      'Consultation médicale complète avec un médecin',
-      'Évaluation approfondie de votre état de santé',
-      'Prescription si nécessaire',
-      'Référence vers un spécialiste si nécessaire',
-      'Accès direct aux spécialistes ORL sur place',
+      'Consultation médicale complète de 30 minutes',
+      'Bilan de santé et évaluation de vos symptômes',
+      'Prescription médicale si nécessaire',
+      'Référence directe à un spécialiste si requis',
+      'Accès aux spécialistes ORL présents sur place',
     ],
   },
 
   pricingCta: {
     overline: 'Tarification',
-    heading: 'Soins médicaux accessibles et transparents',
+    heading: 'Un prix fixe. Zéro surprise.',
     price: '200 $',
     priceLabel: 'par consultation',
     description:
-      'Consultation médicale complète avec un médecin de famille. Forfait annuel familial également disponible.',
-    ctaText: 'Prendre rendez-vous',
+      'Consultation de 30 minutes avec un médecin de famille. Prix fixe, sans surprise. Reçu fourni pour vos assurances privées. Forfait annuel familial disponible.',
+    ctaText: 'Réserver maintenant',
     features: [
       'Consultation 30 min',
       'Sans liste d\'attente',
-      'Suivi rapide',
+      'Reçu pour assurances',
     ],
   },
 
   faq: {
     overline: 'Questions fréquentes',
-    heading: 'Vos questions, nos réponses',
+    heading: 'Tout ce que vous voulez savoir',
     items: [
       {
         question: 'En combien de temps puis-je obtenir un rendez-vous?',
         answer:
-          'La plupart de nos patients obtiennent un rendez-vous en quelques jours ouvrables. Des plages sans rendez-vous sont aussi disponibles pour les cas urgents.',
+          'En 24 à 48 heures dans la plupart des cas. Pour les urgences, nous offrons des plages disponibles le jour même.',
       },
       {
         question: 'Ai-je besoin d\'une référence médicale?',
         answer:
-          'Non. Vous pouvez prendre rendez-vous directement, sans référence.',
+          'Non. Aucune référence requise. Vous prenez rendez-vous directement avec notre clinique.',
       },
       {
         question: 'Comment fonctionne le paiement?',
         answer:
-          'Paiement sur place par carte crédit ou débit. Reçus fournis pour vos assurances privées.',
+          'Sur place, carte crédit ou débit. Reçu fourni pour vos assurances privées.',
       },
       {
         question: 'Qu\'est-ce qui est inclus dans la consultation?',
         answer:
-          'Évaluation médicale complète, prescriptions si nécessaire, orientation vers un spécialiste au besoin.',
+          'Évaluation complète, prescription si nécessaire, référence spécialiste si requis. 30 minutes consacrées entièrement à vous.',
       },
       {
         question: 'Où êtes-vous situés?',
         answer:
-          '1100 avenue Beaumont, bureau 302, Mont-Royal. Stationnement sur place, accessible en fauteuil roulant.',
+          '1100 avenue Beaumont, bureau 302, Mont-Royal. Stationnement gratuit sur place. Accessible en fauteuil roulant.',
       },
     ],
   },
 
   finalCta: {
-    heading: 'Réservez maintenant — disponibilités limitées',
+    heading: 'Votre rendez-vous est à 48 heures.',
     subtitle:
-      'Ne reportez pas votre santé. Soumettez votre demande ou appelez-nous directement.',
-    ctaText: 'Demander un rendez-vous',
+      'Des médecins disponibles cette semaine. Soumettez votre demande maintenant — il reste des disponibilités.',
+    ctaText: 'Demander mon rendez-vous',
     phoneCtaText: '(514) 900-1234',
   },
 
   stickyCta: {
-    text: 'Prendre rendez-vous',
+    text: 'Réserver maintenant',
     phoneText: 'Appeler',
   },
 
