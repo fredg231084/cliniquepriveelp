@@ -3,6 +3,7 @@ export { Hero } from './Hero';
 export { ConversionForm } from './ConversionForm';
 export { WhyChooseUs } from './WhyChooseUs';
 export { HowItWorks } from './HowItWorks';
+export { BookingOptions } from './BookingOptions';
 export { WhatsIncluded } from './WhatsIncluded';
 export { PricingCta } from './PricingCta';
 export { Faq } from './Faq';

@@ -3,7 +3,7 @@
 import { LPConfig } from '@/data/lp/types';
 import { Hero } from './Hero';
 import { WhyChooseUs } from './WhyChooseUs';
-import { HowItWorks } from './HowItWorks';
+import { BookingOptions } from './BookingOptions';
 import { WhatsIncluded } from './WhatsIncluded';
 import { PricingCta } from './PricingCta';
 import { Faq } from './Faq';
@@ -30,8 +30,8 @@ export function LandingPage({ config }: LandingPageProps) {
       {/* SECTION 2 — Why Choose Us */}
       <WhyChooseUs config={config} />
 
-      {/* SECTION 3 — How It Works */}
-      <HowItWorks config={config} />
+      {/* SECTION 3 — Booking Options */}
+      <BookingOptions config={config} />
 
       {/* SECTION 4 — What's Included */}
       <WhatsIncluded config={config} />
