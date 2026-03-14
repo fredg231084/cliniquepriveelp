@@ -4,24 +4,24 @@ export const medecinPriveMontreal: LPConfig = {
   slug: 'medecin-prive-montreal',
   lang: 'fr',
   alternateSlug: 'private-doctor-montreal',
-  title: 'Médecin privé à Montréal — Consultation rapide | Clinique Privée',
+  title: 'Médecin privé à Montréal — Sans attente | Clinique Privée',
   description:
-    'Consultez un médecin privé à Montréal rapidement. Rendez-vous en quelques jours, sans liste d\'attente. Clinique moderne au cœur de Montréal.',
+    'Médecin privé à Montréal. Rendez-vous en quelques jours, sans liste d\'attente. Clinique moderne, tarifs transparents.',
   phone: '+15149001234',
   phoneDisplay: '(514) 900-1234',
 
   hero: {
     overline: 'Clinique Privée Montréal',
-    h1: 'Consultez un médecin\nprivé rapidement\nà Montréal',
+    h1: 'Médecin Privé à Montréal\n— Sans Attente',
     subtitle:
-      'Obtenez un rendez-vous médical en quelques jours dans une clinique privée moderne. Soins attentifs, sans attente prolongée.',
+      'Rendez-vous rapide avec un médecin expérimenté. Réservez en quelques minutes.',
     trustBullets: [
       'Rendez-vous disponibles cette semaine',
       'Consultation complète de 30 minutes',
-      'Accès direct à des spécialistes ORL sur place',
+      'Accès direct aux spécialistes ORL sur place',
       'Résultats et suivis rapides',
     ],
-    pricingCue: 'À partir de 200 $ par consultation',
+    pricingCue: 'Consultation à partir de 200 $',
   },
 
   form: {
@@ -47,21 +47,21 @@ export const medecinPriveMontreal: LPConfig = {
     cards: [
       {
         icon: 'clock',
-        title: 'Accès rapide',
+        title: 'Sans attente',
         description:
-          'Obtenez un rendez-vous en quelques jours, pas en quelques mois. Votre temps est précieux.',
+          'Rendez-vous en quelques jours, pas en quelques mois. Fini les listes d\'attente interminables.',
       },
       {
         icon: 'shield',
-        title: 'Tarification claire',
+        title: 'Prix transparents',
         description:
-          'Aucune surprise. Nos tarifs sont affichés clairement et expliqués avant votre visite.',
+          'Aucune surprise. Tarifs clairs avant votre visite, reçus pour vos assurances privées.',
       },
       {
         icon: 'building',
-        title: 'Clinique moderne',
+        title: 'Accès rapide aux spécialistes',
         description:
-          'Un environnement médical privé, professionnel et accueillant au cœur de Mont-Royal.',
+          'Spécialistes ORL sur place, clinique moderne à Montréal. Tout sous un même toit.',
       },
     ],
   },
@@ -74,13 +74,13 @@ export const medecinPriveMontreal: LPConfig = {
         number: 1,
         title: 'Envoyez votre demande',
         description:
-          'Remplissez le formulaire ci-dessus. C\'est rapide et sans engagement.',
+          'Remplissez le formulaire en 30 secondes. Sans engagement.',
       },
       {
         number: 2,
         title: 'Notre équipe vous contacte',
         description:
-          'Un membre de notre équipe vous rappelle rapidement pour confirmer les détails.',
+          'Un membre de notre équipe vous rappelle rapidement pour confirmer.',
       },
       {
         number: 3,
@@ -125,35 +125,35 @@ export const medecinPriveMontreal: LPConfig = {
       {
         question: 'En combien de temps puis-je obtenir un rendez-vous?',
         answer:
-          'La plupart de nos patients obtiennent un rendez-vous en quelques jours ouvrables. Pour les cas urgents, nous offrons aussi des plages sans rendez-vous.',
+          'La plupart de nos patients obtiennent un rendez-vous en quelques jours ouvrables. Des plages sans rendez-vous sont aussi disponibles pour les cas urgents.',
       },
       {
         question: 'Ai-je besoin d\'une référence médicale?',
         answer:
-          'Non, aucune référence n\'est nécessaire. Vous pouvez prendre rendez-vous directement avec notre clinique.',
+          'Non. Vous pouvez prendre rendez-vous directement, sans référence.',
       },
       {
         question: 'Comment fonctionne le paiement?',
         answer:
-          'Le paiement se fait sur place lors de votre visite. Nous acceptons les cartes de crédit et de débit. Des reçus pour vos assurances privées sont fournis.',
+          'Paiement sur place par carte crédit ou débit. Reçus fournis pour vos assurances privées.',
       },
       {
         question: 'Qu\'est-ce qui est inclus dans la consultation?',
         answer:
-          'Chaque consultation comprend une évaluation médicale complète, une discussion de vos préoccupations de santé, des prescriptions si nécessaire et une orientation vers des spécialistes au besoin.',
+          'Évaluation médicale complète, prescriptions si nécessaire, orientation vers un spécialiste au besoin.',
       },
       {
         question: 'Où êtes-vous situés?',
         answer:
-          'Notre clinique est située au 1100 avenue Beaumont, bureau 302, à Mont-Royal. Stationnement disponible sur place. Accessible en fauteuil roulant.',
+          '1100 avenue Beaumont, bureau 302, Mont-Royal. Stationnement sur place, accessible en fauteuil roulant.',
       },
     ],
   },
 
   finalCta: {
-    heading: 'Prêt à consulter un médecin rapidement?',
+    heading: 'Réservez maintenant — disponibilités limitées',
     subtitle:
-      'Soumettez votre demande maintenant ou appelez-nous directement.',
+      'Ne reportez pas votre santé. Soumettez votre demande ou appelez-nous directement.',
     ctaText: 'Demander un rendez-vous',
     phoneCtaText: '(514) 900-1234',
   },

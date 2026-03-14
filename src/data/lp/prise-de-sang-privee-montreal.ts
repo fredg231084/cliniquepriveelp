@@ -4,19 +4,19 @@ export const priseDeSangPriveeMontreal: LPConfig = {
   slug: 'prise-de-sang-privee-montreal',
   lang: 'fr',
   alternateSlug: 'private-blood-test-montreal',
-  title: 'Prise de sang privée à Montréal — Rendez-vous rapide | Clinique Privée',
+  title: 'Prise de sang privée à Montréal — Sans attente | Clinique Privée',
   description:
-    'Prise de sang privée à Montréal. Rendez-vous rapide, résultats fiables. Clinique moderne avec prélèvements professionnels.',
+    'Prise de sang privée à Montréal. Rendez-vous rapide, résultats fiables. Clinique moderne, tarifs transparents.',
   phone: '+15149001234',
   phoneDisplay: '(514) 900-1234',
 
   hero: {
     overline: 'Clinique Privée Montréal',
-    h1: 'Prise de sang privée\nrapide à Montréal',
+    h1: 'Prise de Sang Privée\nà Montréal — Sans Attente',
     subtitle:
-      'Obtenez votre prise de sang rapidement dans un cadre professionnel et confortable. Sans longue attente, avec des résultats fiables.',
+      'Rendez-vous rapide dans un cadre professionnel. Résultats fiables, souvent sous 48 heures.',
     trustBullets: [
-      'Rendez-vous rapide, souvent dans les 48 heures',
+      'Rendez-vous souvent disponibles dans les 48 heures',
       'Prélèvement professionnel dans un cadre privé',
       'Large gamme d\'analyses disponibles',
       'Résultats rapides et confidentiels',
@@ -47,21 +47,21 @@ export const priseDeSangPriveeMontreal: LPConfig = {
     cards: [
       {
         icon: 'clock',
-        title: 'Rendez-vous rapide',
+        title: 'Sans attente',
         description:
-          'Obtenez un créneau pour votre prise de sang en quelques jours. Pas de file d\'attente interminable.',
+          'Créneau disponible en quelques jours. Pas de file d\'attente, pas de délais inutiles.',
       },
       {
-        icon: 'heart',
-        title: 'Cadre privé et confortable',
+        icon: 'shield',
+        title: 'Prix transparents',
         description:
-          'Un environnement médical moderne et accueillant. Prélèvement réalisé par du personnel qualifié.',
+          'Devis clair avant votre rendez-vous. Reçus pour assurances privées, aucune surprise.',
       },
       {
         icon: 'check',
-        title: 'Résultats fiables',
+        title: 'Résultats fiables et rapides',
         description:
-          'Analyses traitées par des laboratoires certifiés. Résultats transmis de façon sécurisée et rapide.',
+          'Analyses en laboratoires certifiés. Résultats transmis de façon sécurisée.',
       },
     ],
   },
@@ -74,19 +74,19 @@ export const priseDeSangPriveeMontreal: LPConfig = {
         number: 1,
         title: 'Envoyez votre demande',
         description:
-          'Remplissez le formulaire avec vos informations. C\'est rapide et sans engagement.',
+          'Remplissez le formulaire en 30 secondes. Sans engagement.',
       },
       {
         number: 2,
         title: 'Confirmation du rendez-vous',
         description:
-          'Notre équipe vous contacte pour confirmer la date, l\'heure et les préparations nécessaires.',
+          'Notre équipe vous contacte pour confirmer la date et les préparations nécessaires.',
       },
       {
         number: 3,
         title: 'Prélèvement à la clinique',
         description:
-          'Présentez-vous à votre rendez-vous pour un prélèvement rapide et professionnel.',
+          'Présentez-vous pour un prélèvement rapide et professionnel.',
       },
     ],
   },
@@ -107,7 +107,7 @@ export const priseDeSangPriveeMontreal: LPConfig = {
     overline: 'Tarification',
     heading: 'Prises de sang à tarification transparente',
     description:
-      'Le coût varie selon les analyses demandées. Notre équipe vous fournira un devis clair avant votre rendez-vous. Aucune surprise.',
+      'Le coût varie selon les analyses demandées. Devis clair fourni avant votre rendez-vous. Aucune surprise.',
     ctaText: 'Demander un rendez-vous',
     features: [
       'Devis avant rendez-vous',
@@ -123,35 +123,35 @@ export const priseDeSangPriveeMontreal: LPConfig = {
       {
         question: 'Quand puis-je avoir mon rendez-vous?',
         answer:
-          'La plupart des rendez-vous pour prise de sang sont disponibles dans les 48 heures ouvrables.',
+          'La plupart des rendez-vous sont disponibles dans les 48 heures ouvrables.',
       },
       {
         question: 'Ai-je besoin d\'une ordonnance?',
         answer:
-          'Pour certaines analyses, une ordonnance médicale est requise. Si vous n\'en avez pas, notre médecin peut vous en fournir une lors d\'une consultation.',
+          'Certaines analyses requièrent une ordonnance. Si vous n\'en avez pas, notre médecin peut vous en fournir une.',
       },
       {
         question: 'Dois-je être à jeun?',
         answer:
-          'Cela dépend des analyses demandées. Notre équipe vous informera des préparations nécessaires lors de la confirmation de votre rendez-vous.',
+          'Cela dépend des analyses. Notre équipe vous informera lors de la confirmation de votre rendez-vous.',
       },
       {
         question: 'Comment recevrai-je mes résultats?',
         answer:
-          'Les résultats sont transmis de façon sécurisée. Les délais varient selon les analyses, mais la plupart sont disponibles en quelques jours.',
+          'Résultats transmis de façon sécurisée, généralement disponibles en quelques jours.',
       },
       {
         question: 'Où êtes-vous situés?',
         answer:
-          'Notre clinique est située au 1100 avenue Beaumont, bureau 302, à Mont-Royal. Stationnement disponible sur place.',
+          '1100 avenue Beaumont, bureau 302, Mont-Royal. Stationnement sur place.',
       },
     ],
   },
 
   finalCta: {
-    heading: 'Besoin d\'une prise de sang rapidement?',
+    heading: 'Réservez maintenant — disponibilités limitées',
     subtitle:
-      'Soumettez votre demande maintenant ou appelez-nous directement.',
+      'Ne reportez pas votre santé. Soumettez votre demande ou appelez-nous directement.',
     ctaText: 'Réserver ma prise de sang',
     phoneCtaText: '(514) 900-1234',
   },

@@ -4,17 +4,17 @@ export const privateBloodTestMontreal: LPConfig = {
   slug: 'private-blood-test-montreal',
   lang: 'en',
   alternateSlug: 'prise-de-sang-privee-montreal',
-  title: 'Private Blood Test in Montreal — Fast Appointment | Clinique Privée',
+  title: 'Private Blood Test in Montreal — No Wait | Clinique Privée',
   description:
-    'Private blood tests in Montreal. Fast appointment, reliable results. Modern clinic with professional blood draw services.',
+    'Private blood tests in Montreal. Fast appointment, reliable results. Modern clinic, transparent pricing.',
   phone: '+15149001234',
   phoneDisplay: '(514) 900-1234',
 
   hero: {
     overline: 'Clinique Privée Montréal',
-    h1: 'Private blood tests,\nfast and reliable\nin Montreal',
+    h1: 'Private Blood Tests\nin Montreal — No Wait',
     subtitle:
-      'Get your blood work done quickly in a professional, comfortable setting. No long waits, reliable results.',
+      'Fast appointment in a professional, comfortable setting. Reliable results, often within 48 hours.',
     trustBullets: [
       'Appointments often available within 48 hours',
       'Professional blood draw in a private setting',
@@ -47,21 +47,21 @@ export const privateBloodTestMontreal: LPConfig = {
     cards: [
       {
         icon: 'clock',
-        title: 'Fast appointments',
+        title: 'No wait list',
         description:
-          'Get a blood test slot within days. No endless queues or long wait times.',
+          'Get a slot within days. No endless queues or months-long delays.',
       },
       {
-        icon: 'heart',
-        title: 'Private and comfortable',
+        icon: 'shield',
+        title: 'Transparent pricing',
         description:
-          'A modern, welcoming medical environment. Blood draws performed by qualified professionals.',
+          'Clear quote before your appointment. Insurance receipts provided, no surprises.',
       },
       {
         icon: 'check',
-        title: 'Reliable results',
+        title: 'Fast, reliable results',
         description:
-          'Tests processed by certified laboratories. Results delivered securely and promptly.',
+          'Tests processed by certified labs. Results delivered securely and promptly.',
       },
     ],
   },
@@ -74,19 +74,19 @@ export const privateBloodTestMontreal: LPConfig = {
         number: 1,
         title: 'Submit your request',
         description:
-          'Fill in the form with your details. Quick and commitment-free.',
+          'Fill in the form in 30 seconds. No commitment.',
       },
       {
         number: 2,
         title: 'Appointment confirmation',
         description:
-          'Our team contacts you to confirm the date, time, and any necessary preparation.',
+          'Our team contacts you to confirm date, time, and any prep needed.',
       },
       {
         number: 3,
         title: 'Blood draw at the clinic',
         description:
-          'Come in for your appointment. Quick and professional blood draw.',
+          'Come in for a quick, professional blood draw.',
       },
     ],
   },
@@ -107,7 +107,7 @@ export const privateBloodTestMontreal: LPConfig = {
     overline: 'Pricing',
     heading: 'Transparent blood test pricing',
     description:
-      'Cost depends on the specific tests requested. Our team will provide a clear quote before your appointment. No surprises.',
+      'Cost depends on the tests requested. Clear quote provided before your appointment. No surprises.',
     ctaText: 'Request an appointment',
     features: [
       'Quote before appointment',
@@ -128,29 +128,30 @@ export const privateBloodTestMontreal: LPConfig = {
       {
         question: 'Do I need a prescription?',
         answer:
-          'Some tests require a medical prescription. If you don\'t have one, our doctor can provide one during a consultation.',
+          'Some tests require a prescription. If you don\'t have one, our doctor can provide one during a consultation.',
       },
       {
         question: 'Do I need to fast?',
         answer:
-          'It depends on the tests requested. Our team will let you know what preparation is needed when confirming your appointment.',
+          'It depends on the tests. Our team will let you know what prep is needed when confirming your appointment.',
       },
       {
         question: 'How will I receive my results?',
         answer:
-          'Results are delivered securely. Timing varies by test type, but most are available within a few days.',
+          'Results are delivered securely, most available within a few days.',
       },
       {
         question: 'Where are you located?',
         answer:
-          'Our clinic is at 1100 Beaumont Ave, Suite 302, in Mont-Royal. On-site parking available.',
+          '1100 Beaumont Ave, Suite 302, Mont-Royal. On-site parking available.',
       },
     ],
   },
 
   finalCta: {
-    heading: 'Need a blood test done quickly?',
-    subtitle: 'Submit your request now or call us directly.',
+    heading: 'Book now — limited availability',
+    subtitle:
+      'Don\'t put your health on hold. Submit your request or call us directly.',
     ctaText: 'Book my blood test',
     phoneCtaText: '(514) 900-1234',
   },

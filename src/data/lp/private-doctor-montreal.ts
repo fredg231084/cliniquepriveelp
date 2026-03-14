@@ -4,24 +4,24 @@ export const privateDoctorMontreal: LPConfig = {
   slug: 'private-doctor-montreal',
   lang: 'en',
   alternateSlug: 'medecin-prive-montreal',
-  title: 'Private Doctor in Montreal — Fast Appointments | Clinique Privée',
+  title: 'Private Doctor in Montreal — No Wait | Clinique Privée',
   description:
-    'See a private doctor in Montreal within days. No long wait times. Modern private clinic in the heart of Montreal.',
+    'Private doctor in Montreal. Appointments within days, no wait list. Modern clinic, transparent pricing.',
   phone: '+15149001234',
   phoneDisplay: '(514) 900-1234',
 
   hero: {
     overline: 'Clinique Privée Montréal',
-    h1: 'See a private doctor\nquickly in Montreal',
+    h1: 'Private Doctor in Montreal\n— No Wait',
     subtitle:
-      'Get a medical appointment within days at a modern private clinic. Attentive care, no long wait times.',
+      'Fast appointment with an experienced physician. Book in minutes.',
     trustBullets: [
       'Appointments available this week',
       'Full 30-minute consultation',
       'Direct access to on-site ENT specialists',
       'Fast results and follow-ups',
     ],
-    pricingCue: 'Starting at $200 per consultation',
+    pricingCue: 'Consultations starting at $200',
   },
 
   form: {
@@ -47,21 +47,21 @@ export const privateDoctorMontreal: LPConfig = {
     cards: [
       {
         icon: 'clock',
-        title: 'Fast access',
+        title: 'No wait list',
         description:
-          'Get an appointment within days, not months. Your time matters.',
+          'Appointments within days, not months. Skip the endless public system queues.',
       },
       {
         icon: 'shield',
-        title: 'Clear pricing',
+        title: 'Transparent pricing',
         description:
-          'No surprises. Our fees are clearly posted and explained before your visit.',
+          'No surprises. Clear fees before your visit, receipts for private insurance.',
       },
       {
         icon: 'building',
-        title: 'Modern clinic',
+        title: 'Fast specialist access',
         description:
-          'A private, professional, and welcoming medical environment in Mont-Royal.',
+          'On-site ENT specialists, modern clinic in Montreal. Everything under one roof.',
       },
     ],
   },
@@ -74,13 +74,13 @@ export const privateDoctorMontreal: LPConfig = {
         number: 1,
         title: 'Submit your request',
         description:
-          'Fill out the form above. It\'s quick and commitment-free.',
+          'Fill out the form in 30 seconds. No commitment.',
       },
       {
         number: 2,
         title: 'Our team contacts you',
         description:
-          'A team member will call you back quickly to confirm the details.',
+          'A team member calls you back quickly to confirm the details.',
       },
       {
         number: 3,
@@ -125,34 +125,35 @@ export const privateDoctorMontreal: LPConfig = {
       {
         question: 'How quickly can I get an appointment?',
         answer:
-          'Most patients get an appointment within a few business days. For urgent cases, we also offer walk-in availability.',
+          'Most patients get an appointment within a few business days. Walk-in availability also offered for urgent cases.',
       },
       {
         question: 'Do I need a referral?',
         answer:
-          'No referral is needed. You can book an appointment directly with our clinic.',
+          'No. You can book directly with our clinic, no referral needed.',
       },
       {
         question: 'How does payment work?',
         answer:
-          'Payment is collected on-site at the time of your visit. We accept credit and debit cards. Receipts for private insurance claims are provided.',
+          'Payment on-site by credit or debit card. Insurance receipts provided.',
       },
       {
         question: 'What\'s included in the consultation?',
         answer:
-          'Each consultation includes a full medical assessment, a discussion of your health concerns, prescriptions if needed, and referrals to specialists when appropriate.',
+          'Full medical assessment, prescriptions if needed, specialist referrals when appropriate.',
       },
       {
         question: 'Where are you located?',
         answer:
-          'Our clinic is located at 1100 Beaumont Ave, Suite 302, in Mont-Royal. On-site parking available. Wheelchair accessible.',
+          '1100 Beaumont Ave, Suite 302, Mont-Royal. On-site parking, wheelchair accessible.',
       },
     ],
   },
 
   finalCta: {
-    heading: 'Ready to see a doctor quickly?',
-    subtitle: 'Submit your request now or call us directly.',
+    heading: 'Book now — limited availability',
+    subtitle:
+      'Don\'t put your health on hold. Submit your request or call us directly.',
     ctaText: 'Request an appointment',
     phoneCtaText: '(514) 900-1234',
   },

@@ -35,20 +35,20 @@ export function Hero({ config }: HeroProps) {
         </div>
 
         {/* Main hero content */}
-        <div className="lp-container px-5 pb-12 pt-8 md:px-8 md:pb-16 md:pt-12 lg:px-12 lg:pb-20 lg:pt-16">
+        <div className="lp-container px-5 pb-8 pt-6 md:px-8 md:pb-16 md:pt-12 lg:px-12 lg:pb-20 lg:pt-16">
           <div className="grid items-start gap-8 lg:grid-cols-[1fr,420px] lg:gap-12 xl:gap-16">
             {/* Left — Value proposition */}
             <div className="max-w-xl">
-              <h1 className="text-3xl font-bold leading-[1.15] tracking-tight text-white md:text-4xl lg:text-[2.75rem]">
+              <h1 className="text-[1.75rem] font-bold leading-[1.15] tracking-tight text-white md:text-4xl lg:text-[2.75rem]">
                 {config.hero.h1}
               </h1>
 
-              <p className="mt-4 text-base leading-relaxed text-white/65 md:text-lg md:leading-relaxed">
+              <p className="mt-3 text-[15px] leading-relaxed text-white/65 md:mt-4 md:text-lg md:leading-relaxed">
                 {config.hero.subtitle}
               </p>
 
               {/* Trust bullets */}
-              <ul className="mt-7 space-y-3">
+              <ul className="mt-5 space-y-2.5 md:mt-7 md:space-y-3">
                 {config.hero.trustBullets.map((bullet, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold-400/15">
@@ -63,24 +63,24 @@ export function Hero({ config }: HeroProps) {
 
               {/* Pricing cue */}
               {config.hero.pricingCue && (
-                <div className="mt-7 inline-flex items-center gap-2 rounded-xl bg-white/8 px-4 py-2.5 backdrop-blur-sm">
+                <div className="mt-5 inline-flex items-center gap-2 rounded-xl bg-white/8 px-4 py-2.5 backdrop-blur-sm md:mt-7">
                   <span className="text-sm font-medium text-gold-300">{config.hero.pricingCue}</span>
                 </div>
               )}
 
-              {/* Click-to-call for mobile */}
-              <div className="mt-8 lg:mt-10">
+              {/* Click-to-call — visible on mobile below bullets */}
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row lg:mt-10 lg:hidden">
                 <a
                   href={`tel:${config.phone}`}
-                  className="lp-btn-gold inline-flex md:hidden"
+                  className="lp-btn-gold inline-flex flex-1 justify-center"
                   id="lp-hero-phone-btn"
                   data-tracking="hero-click-to-call"
                   onClick={() => trackClickToCall(config.slug, config.lang)}
                 >
-                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <svg className="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
-                  {config.phoneDisplay}
+                  {config.lang === 'fr' ? 'Appeler maintenant' : 'Call now'} — {config.phoneDisplay}
                 </a>
               </div>
             </div>
