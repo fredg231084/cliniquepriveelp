@@ -19,7 +19,7 @@ export function Hero({ config }: HeroProps) {
 
       <div className="relative">
         {/* Top bar — aligned with lp-container, same max-width as hero content */}
-        <div className="px-5 pt-5 pb-4 md:px-8 md:pt-7 md:pb-3 lg:px-12">
+        <div className="px-5 pt-5 pb-5 md:px-8 md:pt-8 md:pb-5 lg:px-12">
           <div className="lp-container flex items-center justify-between gap-4">
             {/* Logo */}
             <Logo className="brightness-0 invert" />
@@ -31,9 +31,9 @@ export function Hero({ config }: HeroProps) {
                 href={`tel:${config.phone}`}
                 onClick={() => trackClickToCall(config.slug, config.lang)}
                 data-tracking="header-click-to-call"
-                className="hidden items-center gap-2 rounded-xl bg-white px-5 py-3 text-[15px] font-semibold text-navy-900 shadow-sm transition-all duration-200 hover:bg-navy-900 hover:text-white hover:shadow-md active:scale-[0.98] sm:inline-flex"
+                className="hidden items-center gap-2.5 rounded-xl bg-white px-6 py-3.5 text-base font-bold text-navy-900 shadow-md transition-all duration-200 hover:bg-navy-900 hover:text-white hover:shadow-lg active:scale-[0.98] sm:inline-flex"
               >
-                <svg className="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 {config.phoneDisplay}

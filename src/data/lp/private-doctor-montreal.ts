@@ -7,8 +7,8 @@ export const privateDoctorMontreal: LPConfig = {
   title: 'Private Doctor in Montreal — Appointment in 24–48h | Clinique Privée',
   description:
     'See a private doctor in Montreal this week. No wait list, no referral needed. Modern clinic, transparent pricing.',
-  phone: '+15149001234',
-  phoneDisplay: '(514) 900-1234',
+  phone: '+15143603314',
+  phoneDisplay: '(514) 360-3314',
 
   hero: {
     overline: 'Clinique Privée Montréal',

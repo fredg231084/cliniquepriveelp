@@ -7,8 +7,8 @@ export const privateBloodTestMontreal: LPConfig = {
   title: 'Private Blood Test in Montreal — Fast Results | Clinique Privée',
   description:
     'Private blood tests in Montreal within 48h. No long wait. Certified labs, transparent pricing, insurance receipts.',
-  phone: '+15149001234',
-  phoneDisplay: '(514) 900-1234',
+  phone: '+15143603314',
+  phoneDisplay: '(514) 360-3314',
 
   hero: {
     overline: 'Clinique Privée Montréal',

@@ -7,8 +7,8 @@ export const priseDeSangPriveeMontreal: LPConfig = {
   title: 'Prise de sang privée à Montréal — Résultats rapides | Clinique Privée',
   description:
     'Prise de sang privée à Montréal sous 48h. Sans ordonnance pour la plupart des analyses. Résultats fiables, tarifs clairs.',
-  phone: '+15149001234',
-  phoneDisplay: '(514) 900-1234',
+  phone: '+15143603314',
+  phoneDisplay: '(514) 360-3314',
 
   hero: {
     overline: 'Clinique Privée Montréal',

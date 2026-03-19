@@ -10,9 +10,9 @@ export function Logo({ className = '' }: LogoProps) {
     <Image
       src="/logos/clinique-privee-logo-white2.png"
       alt="Clinique Privée"
-      width={280}
-      height={75}
-      className={`h-14 w-auto md:h-16 ${className}`}
+      width={320}
+      height={86}
+      className={`h-16 w-auto md:h-20 ${className}`}
       priority
     />
   );

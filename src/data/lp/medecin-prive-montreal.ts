@@ -7,8 +7,8 @@ export const medecinPriveMontreal: LPConfig = {
   title: 'Médecin privé à Montréal — Rendez-vous en 24–48h | Clinique Privée',
   description:
     'Consultez un médecin privé à Montréal dès cette semaine. Sans liste d\'attente, sans référence. Clinique moderne, tarifs clairs.',
-  phone: '+15149001234',
-  phoneDisplay: '(514) 900-1234',
+  phone: '+15143603314',
+  phoneDisplay: '(514) 360-3314',
 
   hero: {
     overline: 'Clinique Privée Montréal',
