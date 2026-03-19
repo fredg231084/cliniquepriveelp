@@ -19,7 +19,7 @@ export const medecinPriveMontreal: LPConfig = {
       'Rendez-vous confirmé sous 24–48h',
       'Consultation complète de 30 minutes',
       'Spécialistes ORL disponibles sur place',
-      'Prescription et suivi le jour même',
+      'Suivi médical complet le jour même',
     ],
     pricingCue: 'Consultation à partir de 200 $ — Reçu pour assurances',
   },
@@ -55,7 +55,7 @@ export const medecinPriveMontreal: LPConfig = {
         icon: 'shield',
         title: '200 $, tout inclus',
         description:
-          'Consultation complète, prescription si nécessaire, reçu pour vos assurances. Aucun frais caché.',
+          'Consultation complète, documentation médicale incluse, reçu pour vos assurances. Aucun frais caché.',
       },
       {
         icon: 'building',
@@ -97,8 +97,8 @@ export const medecinPriveMontreal: LPConfig = {
     items: [
       'Consultation médicale complète de 30 minutes',
       'Bilan de santé et évaluation de vos symptômes',
-      'Prescription médicale si nécessaire',
-      'Référence directe à un spécialiste si requis',
+      'Documentation médicale complète remise au patient',
+      'Orientation vers les bons soins spécialisés si requis',
       'Accès aux spécialistes ORL présents sur place',
     ],
   },
@@ -140,7 +140,7 @@ export const medecinPriveMontreal: LPConfig = {
       {
         question: 'Qu\'est-ce qui est inclus dans la consultation?',
         answer:
-          'Évaluation complète, prescription si nécessaire, référence spécialiste si requis. 30 minutes consacrées entièrement à vous.',
+          'Évaluation complète, documentation médicale remise, orientation vers les bons soins si requis. 30 minutes consacrées entièrement à vous.',
       },
       {
         question: 'Où êtes-vous situés?',

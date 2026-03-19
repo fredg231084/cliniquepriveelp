@@ -126,9 +126,9 @@ export const priseDeSangPriveeMontreal: LPConfig = {
           'Sous 48 heures ouvrables dans la plupart des cas. Contactez-nous pour les demandes urgentes.',
       },
       {
-        question: 'Ai-je besoin d\'une ordonnance?',
+        question: 'Ai-je besoin d\'une demande médicale?',
         answer:
-          'Certaines analyses l\'exigent. Si vous n\'en avez pas, notre médecin peut vous en fournir une lors d\'une courte consultation.',
+          'Certaines analyses nécessitent une demande médicale. Si vous n\'en avez pas, notre équipe peut vous guider lors de votre prise de contact.',
       },
       {
         question: 'Dois-je être à jeun?',

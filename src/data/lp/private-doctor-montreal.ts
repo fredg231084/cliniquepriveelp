@@ -19,7 +19,7 @@ export const privateDoctorMontreal: LPConfig = {
       'Appointment confirmed within 24–48 hours',
       'Full 30-minute consultation',
       'ENT specialists available on-site',
-      'Prescription and follow-up same day',
+      'Complete medical follow-up same day',
     ],
     pricingCue: 'Consultations from $200 — Insurance receipts provided',
   },
@@ -55,7 +55,7 @@ export const privateDoctorMontreal: LPConfig = {
         icon: 'shield',
         title: '$200, all-inclusive',
         description:
-          'Full consultation, prescription if needed, insurance receipt. No hidden fees.',
+          'Full consultation, complete medical documentation, insurance receipt. No hidden fees.',
       },
       {
         icon: 'building',
@@ -97,8 +97,8 @@ export const privateDoctorMontreal: LPConfig = {
     items: [
       'Full 30-minute medical consultation',
       'Health assessment and symptom evaluation',
-      'Medical prescription if needed',
-      'Direct specialist referral if required',
+      'Complete medical documentation provided',
+      'Guidance toward the right specialist care if needed',
       'Access to ENT specialists on-site',
     ],
   },
@@ -140,7 +140,7 @@ export const privateDoctorMontreal: LPConfig = {
       {
         question: 'What\'s included in the consultation?',
         answer:
-          'Full assessment, prescription if needed, specialist referral if required. 30 minutes entirely focused on you.',
+          'Full assessment, complete medical documentation, guidance toward specialist care if needed. 30 minutes entirely focused on you.',
       },
       {
         question: 'Where are you located?',

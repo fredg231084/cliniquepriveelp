@@ -126,9 +126,9 @@ export const privateBloodTestMontreal: LPConfig = {
           'Within 48 business hours in most cases. Contact us for urgent requests.',
       },
       {
-        question: 'Do I need a prescription?',
+        question: 'Do I need a medical request form?',
         answer:
-          'Some tests require one. If you don\'t have a prescription, our doctor can provide one during a short consultation.',
+          'Some tests require a medical request. If you don\'t have one, our team can guide you when you contact us.',
       },
       {
         question: 'Do I need to fast?',
