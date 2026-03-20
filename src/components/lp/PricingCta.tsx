@@ -7,13 +7,12 @@ interface PricingCtaProps {
   config: LPConfig;
 }
 
+function bookingUrl(lang: string, utmContent: string) {
+  return `https://rendezvous.cliniqueprivee.com?lang=${lang}&utm_source=google&utm_medium=cpc&utm_campaign=lp-clinique&utm_content=${utmContent}`;
+}
+
 export function PricingCta({ config }: PricingCtaProps) {
   const { pricingCta } = config;
-
-  const scrollToForm = () => {
-    trackCtaClick(config.slug, config.lang, 'pricing-cta');
-    document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <section className="lp-section bg-cream-100" id="pricing">
@@ -58,16 +57,19 @@ export function PricingCta({ config }: PricingCtaProps) {
 
           {/* CTA */}
           <div className="mt-8">
-            <button
-              onClick={scrollToForm}
+            <a
+              href={bookingUrl(config.lang, 'pricing-cta')}
+              target="_blank"
+              rel="noopener noreferrer"
               className="lp-btn-primary"
               data-tracking="pricing-cta-btn"
+              onClick={() => trackCtaClick(config.slug, config.lang, 'pricing-cta')}
             >
               {pricingCta.ctaText}
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>

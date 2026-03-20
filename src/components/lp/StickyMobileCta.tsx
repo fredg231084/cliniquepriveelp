@@ -8,23 +8,21 @@ interface StickyMobileCtaProps {
   config: LPConfig;
 }
 
+function bookingUrl(lang: string, utmContent: string) {
+  return `https://rendezvous.cliniqueprivee.com?lang=${lang}&utm_source=google&utm_medium=cpc&utm_campaign=lp-clinique&utm_content=${utmContent}`;
+}
+
 export function StickyMobileCta({ config }: StickyMobileCtaProps) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Show after scrolling past the hero form
       setIsVisible(window.scrollY > 600);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const scrollToForm = () => {
-    trackCtaClick(config.slug, config.lang, 'sticky-mobile');
-    document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <div
@@ -35,13 +33,16 @@ export function StickyMobileCta({ config }: StickyMobileCtaProps) {
       data-tracking="sticky-mobile-cta"
     >
       <div className="flex items-center gap-2.5">
-        <button
-          onClick={scrollToForm}
+        <a
+          href={bookingUrl(config.lang, 'sticky-cta')}
+          target="_blank"
+          rel="noopener noreferrer"
           className="lp-btn-primary flex-1 py-3 text-sm"
           data-tracking="sticky-form-btn"
+          onClick={() => trackCtaClick(config.slug, config.lang, 'sticky-mobile')}
         >
           {config.stickyCta.text}
-        </button>
+        </a>
         <a
           href={`tel:${config.phone}`}
           className="flex h-[44px] w-[44px] shrink-0 items-center justify-center rounded-xl border border-navy-200 bg-white text-navy-800 transition-colors hover:bg-cream-50"

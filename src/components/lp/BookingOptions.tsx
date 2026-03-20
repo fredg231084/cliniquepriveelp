@@ -7,8 +7,8 @@ interface BookingOptionsProps {
   config: LPConfig;
 }
 
-function scrollToForm() {
-  document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' });
+function bookingUrl(lang: string, utmContent: string) {
+  return `https://rendezvous.cliniqueprivee.com?lang=${lang}&utm_source=google&utm_medium=cpc&utm_campaign=lp-clinique&utm_content=${utmContent}`;
 }
 
 export function BookingOptions({ config }: BookingOptionsProps) {
@@ -177,17 +177,14 @@ interface CardData {
 }
 
 function BookingCard({ card, config }: { card: CardData; config: LPConfig }) {
-  const handleClick = () => {
-    if (card.type === 'scroll') {
-      scrollToForm();
-      trackCtaClick(config.slug, config.lang, `booking-${card.id}`);
-    } else if (card.type === 'phone') {
-      trackClickToCall(config.slug, config.lang);
-    }
-  };
-
   const isPhone = card.type === 'phone';
   const isChat = card.type === 'chat';
+
+  // UTM content per card id
+  const utmContentMap: Record<string, string> = {
+    form: 'booking-form',
+    online: 'booking-online',
+  };
 
   const buttonContent = (
     <>
@@ -216,7 +213,7 @@ function BookingCard({ card, config }: { card: CardData; config: LPConfig }) {
       {isPhone ? (
         <a
           href={`tel:${config.phone}`}
-          onClick={handleClick}
+          onClick={() => trackClickToCall(config.slug, config.lang)}
           data-tracking={`booking-phone-${config.slug}`}
           className="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-navy-800 bg-navy-800 px-5 py-3.5 text-[15px] font-semibold text-white transition-all duration-200 hover:bg-navy-900 hover:border-navy-900 hover:shadow-lg active:scale-[0.98]"
         >
@@ -229,7 +226,6 @@ function BookingCard({ card, config }: { card: CardData; config: LPConfig }) {
         <button
           type="button"
           onClick={() => {
-            // Hook for chat widget (e.g. Intercom, Crisp)
             if (typeof window !== 'undefined' && (window as unknown as Record<string, unknown>).Intercom) {
               ((window as unknown as Record<string, unknown>).Intercom as (cmd: string) => void)('show');
             }
@@ -239,13 +235,16 @@ function BookingCard({ card, config }: { card: CardData; config: LPConfig }) {
           {buttonContent}
         </button>
       ) : (
-        <button
-          type="button"
-          onClick={handleClick}
+        <a
+          href={bookingUrl(config.lang, utmContentMap[card.id] ?? `booking-${card.id}`)}
+          target="_blank"
+          rel="noopener noreferrer"
           className="lp-btn-primary w-full"
+          data-tracking={`booking-${card.id}-btn`}
+          onClick={() => trackCtaClick(config.slug, config.lang, `booking-${card.id}`)}
         >
           {buttonContent}
-        </button>
+        </a>
       )}
     </div>
   );

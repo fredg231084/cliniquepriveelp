@@ -7,13 +7,12 @@ interface FinalCtaProps {
   config: LPConfig;
 }
 
+function bookingUrl(lang: string, utmContent: string) {
+  return `https://rendezvous.cliniqueprivee.com?lang=${lang}&utm_source=google&utm_medium=cpc&utm_campaign=lp-clinique&utm_content=${utmContent}`;
+}
+
 export function FinalCta({ config }: FinalCtaProps) {
   const { finalCta } = config;
-
-  const scrollToForm = () => {
-    trackCtaClick(config.slug, config.lang, 'final-cta');
-    document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <section className="hero-gradient bg-noise relative overflow-hidden" id="final-cta">
@@ -32,16 +31,19 @@ export function FinalCta({ config }: FinalCtaProps) {
 
           {/* CTAs */}
           <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-4">
-            <button
-              onClick={scrollToForm}
+            <a
+              href={bookingUrl(config.lang, 'bottom-cta')}
+              target="_blank"
+              rel="noopener noreferrer"
               className="lp-btn-gold w-full sm:w-auto"
               data-tracking="final-cta-form-btn"
+              onClick={() => trackCtaClick(config.slug, config.lang, 'final-cta')}
             >
               {finalCta.ctaText}
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
-            </button>
+            </a>
 
             <a
               href={`tel:${config.phone}`}
