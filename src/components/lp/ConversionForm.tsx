@@ -9,9 +9,31 @@ interface ConversionFormProps {
   variant?: 'hero' | 'standalone';
 }
 
+function buildBookingUrl(lang: string, name: string, phone: string, email: string): string {
+  // Split full name into first / last on first space
+  const parts = name.trim().split(/\s+/);
+  const fn = parts[0] ?? '';
+  const ln = parts.slice(1).join(' ') ?? '';
+
+  const params = new URLSearchParams({
+    lang,
+    fn,
+    ln,
+    em: email,
+    ph: phone,
+    utm_source: 'google',
+    utm_medium: 'cpc',
+    utm_campaign: 'lp-clinique',
+    utm_content: 'hero-form',
+  });
+
+  return `https://rendezvous.cliniqueprivee.com?${params.toString()}`;
+}
+
 export function ConversionForm({ config, variant = 'hero' }: ConversionFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [bookingRedirectUrl, setBookingRedirectUrl] = useState<string | null>(null);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -19,30 +41,39 @@ export function ConversionForm({ config, variant = 'hero' }: ConversionFormProps
 
     // Gather form data
     const formData = new FormData(e.currentTarget);
+    const name = formData.get('name') as string;
+    const phone = formData.get('phone') as string;
+    const email = formData.get('email') as string;
+    const appointmentType = formData.get('appointmentType') as string;
+
     const data = {
-      name: formData.get('name') as string,
-      phone: formData.get('phone') as string,
-      email: formData.get('email') as string,
-      appointmentType: formData.get('appointmentType') as string,
+      name,
+      phone,
+      email,
+      appointmentType,
       slug: config.slug,
       lang: config.lang,
     };
+
+    // Build the prefilled booking URL before any async work
+    const redirectUrl = buildBookingUrl(config.lang, name, phone, email);
+    setBookingRedirectUrl(redirectUrl);
 
     // Track the conversion event
     trackFormSubmission(config.slug, config.lang);
 
     // Send to API route → secretary email via Resend
-    const response = await fetch('/api/lp-submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    });
-
-    if (!response.ok) {
-      console.error('Form submission failed:', await response.text());
-      setIsSubmitting(false);
-      // Still show success to user — you don't want to lose them
-      // The error is logged for debugging
+    try {
+      const response = await fetch('/api/lp-submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (!response.ok) {
+        console.error('Form submission failed:', await response.text());
+      }
+    } catch (err) {
+      console.error('Form submission error:', err);
     }
 
     setIsSubmitting(false);
@@ -54,25 +85,47 @@ export function ConversionForm({ config, variant = 'hero' }: ConversionFormProps
   if (isSubmitted) {
     return (
       <div
-        className={`rounded-2xl bg-white p-6 md:p-8 ${
-          isHero ? 'shadow-form' : 'shadow-card'
-        }`}
+        className={`rounded-2xl bg-white p-6 md:p-8 ${isHero ? 'shadow-form' : 'shadow-card'}`}
         id="lp-form-success"
         data-tracking="form-success"
       >
-        <div className="flex flex-col items-center py-6 text-center">
+        <div className="flex flex-col items-center py-4 text-center">
+          {/* Success icon */}
           <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-emerald-50">
             <svg className="h-7 w-7 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
             </svg>
           </div>
+
           <h3 className="mb-2 text-xl font-semibold text-navy-800">
-            {config.lang === 'fr' ? 'Demande envoyée' : 'Request sent'}
+            {config.lang === 'fr' ? 'Demande envoyée !' : 'Request sent!'}
           </h3>
-          <p className="text-[15px] leading-relaxed text-navy-600/70">
+          <p className="mb-6 text-[15px] leading-relaxed text-navy-600/70">
             {config.lang === 'fr'
-              ? 'Notre équipe vous contactera sous peu pour confirmer votre rendez-vous.'
-              : 'Our team will contact you shortly to confirm your appointment.'}
+              ? 'Notre équipe vous contactera sous peu. Voulez-vous réserver directement en ligne ?'
+              : 'Our team will contact you shortly. Want to book directly online?'}
+          </p>
+
+          {/* CTA → booking app pre-filled */}
+          {bookingRedirectUrl && (
+            <a
+              href={bookingRedirectUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="lp-btn-primary w-full"
+              data-tracking="form-success-booking-btn"
+            >
+              {config.lang === 'fr' ? 'Choisir mon créneau en ligne' : 'Choose my time slot online'}
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+          )}
+
+          <p className="mt-3 text-xs text-navy-400/50">
+            {config.lang === 'fr'
+              ? 'Vos informations sont déjà préremplies.'
+              : 'Your information is already pre-filled.'}
           </p>
         </div>
       </div>
@@ -81,9 +134,7 @@ export function ConversionForm({ config, variant = 'hero' }: ConversionFormProps
 
   return (
     <div
-      className={`rounded-2xl bg-white ${
-        isHero ? 'p-6 shadow-form md:p-8' : 'p-6 shadow-card md:p-8'
-      }`}
+      className={`rounded-2xl bg-white ${isHero ? 'p-6 shadow-form md:p-8' : 'p-6 shadow-card md:p-8'}`}
       id="lp-form-card"
       data-tracking="form-card"
     >

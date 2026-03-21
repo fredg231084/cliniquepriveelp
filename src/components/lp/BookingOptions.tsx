@@ -223,17 +223,15 @@ function BookingCard({ card, config }: { card: CardData; config: LPConfig }) {
           {buttonContent}
         </a>
       ) : isChat ? (
-        <button
-          type="button"
-          onClick={() => {
-            if (typeof window !== 'undefined' && (window as unknown as Record<string, unknown>).Intercom) {
-              ((window as unknown as Record<string, unknown>).Intercom as (cmd: string) => void)('show');
-            }
-          }}
+        <a
+          href="https://direct.lc.chat/17310813/"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-tracking="booking-chat-btn"
           className="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-navy-800/20 bg-cream-50 px-5 py-3.5 text-[15px] font-semibold text-navy-800 transition-all duration-200 hover:border-navy-800/40 hover:bg-cream-100 active:scale-[0.98]"
         >
           {buttonContent}
-        </button>
+        </a>
       ) : (
         <a
           href={bookingUrl(config.lang, utmContentMap[card.id] ?? `booking-${card.id}`)}
