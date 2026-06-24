@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Outfit } from 'next/font/google';
+import { GoogleTagManager } from '@next/third-parties/google';
 import './globals.css';
 
 const outfit = Outfit({
@@ -28,7 +29,10 @@ export default function RootLayout({
 }) {
   return (
     <html className={outfit.variable} suppressHydrationWarning>
-      <body className="font-sans antialiased">{children}</body>
+      <GoogleTagManager gtmId="GTM-WMB2SQDL" />
+      <body className="font-sans antialiased">
+        {children}
+      </body>
     </html>
   );
 }
